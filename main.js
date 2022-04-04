@@ -6,10 +6,7 @@ const counterText = document.getElementById('counterText')
 
 let count = 0
 
-if(localStorage.getItem("counterValue") == ""){
-    count = 0
-}
-else{
+if(localStorage.getItem("counterValue")){
     count = localStorage.getItem("counterValue")
     counterText.innerText = count
 }
